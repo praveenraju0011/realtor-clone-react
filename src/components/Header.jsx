@@ -22,7 +22,7 @@ export default function Header() {
         <div>
           <ul className="flex space-x-10">
             <li
-              className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
+              className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent cursor-pointer ${
                 pathMathRoute("/") && "text-black border-b-red-500"
               }`}
               onClick={() => navigate("/")}
@@ -30,7 +30,7 @@ export default function Header() {
               Home
             </li>
             <li
-              className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
+              className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent cursor-pointer ${
                 pathMathRoute("/offers") && "text-black border-b-red-500"
               }`}
               onClick={() => navigate("/offers")}
@@ -38,7 +38,7 @@ export default function Header() {
               Offers
             </li>
             <li
-              className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
+              className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent cursor-pointer ${
                 pathMathRoute("/sign-in") && "text-black border-b-red-500"
               }`}
               onClick={() => navigate("/sign-in")}
